@@ -59,3 +59,8 @@ This test case verifies the display of product ratings on the e-commerce website
 
 ### Tear Down
 After each test case, the browser instance will be closed.
+
+## Demo Video
+
+https://github.com/salasmarcelo/ecommerceTests/assets/141787326/f1e25e9e-2861-42c9-b207-92db385d931d
+
