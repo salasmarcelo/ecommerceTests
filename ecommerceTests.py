@@ -14,7 +14,7 @@ class ShoppingCartTest(unittest.TestCase):
         self.driver = webdriver.Chrome()
         self.driver.get("https://www.amazon.com")
     def test_add_product_to_cart(self):
-        # Test 1: Adding Product to Cart
+        # Test 1: Adding Product to Cart and Confirm the Product Name
         wait = WebDriverWait(self.driver, 3)
         try:
             search_box = wait.until(EC.element_to_be_clickable((By.ID, "twotabsearchtextbox")))
@@ -108,6 +108,7 @@ class ShoppingCartTest(unittest.TestCase):
         self.assertIn("(0 items)", empty_cart_message.lower(), "Product not removed from cart")
 
     def test_rating(self):
+        # Test 3: Confirm that Product Rating is Present
         wait = WebDriverWait(self.driver, 3)
         try:
             search_box = wait.until(EC.element_to_be_clickable((By.ID, "twotabsearchtextbox")))
